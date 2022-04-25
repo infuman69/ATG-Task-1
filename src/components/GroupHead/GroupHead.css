@@ -1,0 +1,26 @@
+.group_head{
+    width:100%;
+    height:62vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('../../Assets/grouphead.jpg')no-repeat center/cover fixed ;
+    font-family: 'IBM Plex Sans';
+    display:flex;
+    position:relative;
+
+}
+.group_info{
+    position : absolute;
+    width:61.5%;
+    margin:auto;
+    color:#FFFFFF;
+    top:63%;
+    left:15.1%;
+}
+.group_info h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.group_info p{
+    margin-top: 3px;
+    font-size:18px;
+    font-weight: 400;
+}

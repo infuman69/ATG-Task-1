@@ -18,6 +18,9 @@ nav{
 .logo .greenh{
     color:#27A365;
 }
+.logo h1{
+    font-weight: 300;
+}
 .search-bar{
     display:flex;
     align-items:center;
@@ -26,8 +29,6 @@ nav{
     height:59%;
     justify-content: space-around;
     border-radius: 21px;
-   
-
 }
 .search-bar input{
     outline:none;
