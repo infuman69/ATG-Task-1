@@ -1,0 +1,87 @@
+.signup{
+    height:100%;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.some-text{
+    width:100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    background-color:  #EFFFF4;
+    border-radius: 8px 8px 0px 0px;
+}
+.some-text p{
+    font-size: 14px;
+    width:87%;
+    margin:auto;
+    color: #008A45;
+    font-weight: 500;
+}
+.create-acc{
+    width:87%;
+    margin:20px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.create-acc p{
+    font-size: 13px;
+    font-weight: 600;
+}
+.create-acc p span{
+    color:blue
+}
+.form-cont-img{
+    width:87%;
+    margin:20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.some-img{
+    width:40%;
+}
+.form-cont-img .some-img img{
+    width:100%;
+}
+.signupform form input{
+    height:46px;
+}
+.signupform form{
+    width:100%
+}
+.signupform form .email, .signupform form .password ,.signupform form .confirm-password{
+    width:100%
+}
+.signupform form .email input, .signupform form .password input ,.signupform form .confirm-password input{
+    width:100%;
+}
+form .name,input{
+    border-radius: 2px 2px 0px 0px;
+}
+.input-style{
+    background-color:  #F7F8FA;
+    color: #8A8A8A;
+    font-weight: 500;
+    /* font-size: 16px;  */
+    padding-left: 5px;
+    outline:none;
+    border:none;
+    border: 1px solid #D9D9DB;
+}
+form .confirm-password,input{
+    border-radius: 0px 0px 2px 2px;
+}
+form .signupbtn {
+    width:100%;
+    height: 40px;
+    margin:20px 0;
+    outline :none;
+    border:none;
+    background: #2F6CE5;
+    color:#FFFFFF;
+    border-radius: 20px;
+    font-size: 14px;
+}

@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import {AiOutlineSearch,AiFillCaretDown} from "react-icons/ai"
+import Modal from '../Modals/Modal/Modal'
+import Signin from '../Modals/Signin/Signin'
+import Signup from '../Modals/Signup/Signup'
+
+
+
 
 const Navbar = () => {
+  const [isOpen,setisOpen] = useState(false)
+  const handleClick = () => {
+    setisOpen(true)
+  }
   return (
     <nav>
       <div className="nav-cont">
@@ -24,13 +34,16 @@ const Navbar = () => {
         </div>
         <div className="accdetail">
           <h4>
-            Create account.<a href="#">It's free! </a>
+            Create account.<a href="#" onClick={handleClick}>It's free! </a>
             <span className="downarrow">
               <AiFillCaretDown/>
             </span>
           </h4>
         </div>
       </div>
+      <Modal open={isOpen} onClose={() => setisOpen(false)}>
+        <Signup/>
+      </Modal>
     </nav>
   )
 }
