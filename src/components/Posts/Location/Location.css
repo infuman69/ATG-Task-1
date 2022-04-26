@@ -1,8 +1,11 @@
 .location{
-    width:17%;
+    width:25%;
     height:20vh;
     font-family: 'IBM Plex Sans';
+    margin:10px 0;
     margin-left: 10px;
+    position: sticky;
+    top:162px;
 }
 .locinput{
     width:100%;

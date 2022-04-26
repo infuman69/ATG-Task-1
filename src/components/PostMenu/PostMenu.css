@@ -3,8 +3,8 @@
     height:10vh;
     padding-top: 30px;
     font-family: 'IBM Plex Sans';
-  
-  
+    position: sticky;
+    top:70px;
     background-color: #FFFFFF;
     margin-bottom: 6px;
 }
@@ -17,8 +17,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E0E0E0;
-    position: sticky;
-    top:70px;
+    
 }
 .posts{
     width:40%;

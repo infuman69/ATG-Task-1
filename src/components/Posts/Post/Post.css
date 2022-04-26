@@ -1,0 +1,9 @@
+.postscont{
+    width:100%;
+}
+.post-cont{
+    width:69.5%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}

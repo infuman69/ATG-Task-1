@@ -1,0 +1,23 @@
+.PostContainer{
+    display:flex;
+    flex-direction: column;
+
+}
+.card1{
+    width:692px;
+    height:530px;
+    font-family: IBM Plex Sans;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin:10px 0;
+    margin-left: 5px;
+}
+.card2{
+    width:692px;
+    height:269px;
+    font-family: IBM Plex Sans;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin:10px 0;
+    margin-left: 5px;
+}
