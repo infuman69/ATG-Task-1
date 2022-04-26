@@ -13,10 +13,6 @@ function App() {
     <Navbar/>
     <GroupHead/>
     <PostMenu/>
-    <PostCard/>
-    <PostCard/>
-    <PostCard/>
-    <PostCard/>
   </>
   );
 }
