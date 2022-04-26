@@ -1,0 +1,84 @@
+.card{
+    width:692px;
+    height:472px;
+    font-family: IBM Plex Sans;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin:10px 0;
+    margin-left: 5px;
+}
+.cardimg{
+    width:100%;
+    height:50%;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.cardimg img{
+    width:100%;
+    height:100%;
+}
+.card-event-type{
+    display:flex;
+    margin:15px 20px;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+}
+.event-title{
+    display: flex;
+    margin:0px 20px;
+    margin-bottom: 15px;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.event-text{
+    width:94.5%;
+    margin:auto;
+    font-family: IBM Plex Sans;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C5C5C;
+    margin-bottom: 15px;
+}
+.event-author-details{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:94.5%;
+    margin: auto;
+    
+}
+.author-details{
+    display: flex;
+    justify-content: space-between;
+    width:29%;
+    height: 100%;
+    align-items: center;
+}
+.author-details img{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+ .views-share-icon{
+    display:flex;
+    width:20%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.views-share-icon .share-icon{
+    background-color:#EDEEF0 ;
+    width:15%;
+    height: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
