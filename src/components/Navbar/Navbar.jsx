@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>
       <Modal open={isOpen} onClose={() => setisOpen(false)}>
-        <Signup/>
+        <Signin/>
       </Modal>
     </nav>
   )
