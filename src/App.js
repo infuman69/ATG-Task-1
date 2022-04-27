@@ -12,9 +12,9 @@ function App() {
   return (
   <>
     <Navbar/>
-    <GroupHead/>
+    <GroupHead joined={joined} setJoin={setjoined}/>
     <PostMenu joined={joined} setJoin={setjoined}/>
-    <Post/>
+    <Post joined={joined}/>
   </>
   );
 }

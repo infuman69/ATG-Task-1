@@ -3,12 +3,12 @@ import Location from '../Location/Location'
 import PostContainer from '../PostContainer/PostContainer'
 import './Post.css'
 
-const Post = () => {
+const Post = ({joined}) => {
   return (
     <div className="posts-cont">
       <div className="post-cont">
         <PostContainer/>
-        <Location/>
+        <Location joined={joined}/>
       </div>
     </div>
   )

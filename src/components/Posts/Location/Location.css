@@ -1,5 +1,5 @@
 .location{
-    width:25%;
+    width:34%;
     height:20vh;
     font-family: 'IBM Plex Sans';
     margin:10px 0;
@@ -35,6 +35,53 @@
 }
 .loctext p{
     font-size: 12px;
+}
+.rec-groups{
+    margin:13px 0;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.rec-groups h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color:#000000
+}
+.rec-groups .rec-group-list{
+    list-style: none;
+    width:100%;
+}
+.rec-group{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: center;
+    margin:15px 0;
+}
+.rec-group .user{
+    width:60%;
+    display: flex;
+    align-items: center;
+}
+.rec-group .user span{
+    margin-left: 15px;
+    color:#000000
+}
+.rec-group .user img{
+    border-radius: 21px;
+    width:36px;
+    height:36px;
+}
+.rec-group .follow{
+    outline:none;
+    background: #EDEEF0;
+    padding:5px 8px;
+    border-radius: 14px;
+    border: none;
+    font-size: 12px;
+    color:#000000;
+    cursor: pointer;
+    
 }
 @media only screen and (max-width: 863px){
     .location{
