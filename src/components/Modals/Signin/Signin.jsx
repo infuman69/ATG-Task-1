@@ -4,7 +4,7 @@ import signupimg from "../../../Assets/signup.svg"
 import {FcGoogle} from "react-icons/fc"
 import "./Signin.css"
 
-const Signin = ({clickSignup}) => {
+const Signin = ({clickSignup,setlogin,onClose}) => {
   return (
     <section className="signin">
         <div className="some-text">
@@ -23,7 +23,7 @@ const Signin = ({clickSignup}) => {
                     <div className="password">
                         <input type="password" name="" id="" placeholder='Password' className='input-style' />
                     </div>
-                    <button type="submit" className='signupbtn'>
+                    <button type="submit" className='signupbtn' onClick={()=>{setlogin(); onClose();}}>
                         Sign In
                     </button>
                 </form>

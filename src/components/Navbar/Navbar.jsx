@@ -4,6 +4,8 @@ import {AiOutlineSearch,AiFillCaretDown} from "react-icons/ai"
 import Modal from '../Modals/Modal/Modal'
 import Signin from '../Modals/Signin/Signin'
 import Signup from '../Modals/Signup/Signup'
+import NotLogin from './NotLogin/NotLogin'
+import Logedin from './Logedin/Logedin'
 
 
 
@@ -11,6 +13,7 @@ import Signup from '../Modals/Signup/Signup'
 const Navbar = () => {
   const [isOpen,setisOpen] = useState(false)
   const [modaltype,setmodaltype] = useState('signup')
+  const [onLogin,setLogin] = useState(false)
   const handleClick = () => {
     setisOpen(true)
   }
@@ -34,17 +37,12 @@ const Navbar = () => {
           <input type="text" name="" id="" placeholder='Search for your favourite groups in ATG'/>
         </div>
         <div className="accdetail">
-          <h4>
-            Create account.<a href="#" onClick={handleClick}>It's free! </a>
-            <span className="downarrow">
-              <AiFillCaretDown/>
-            </span>
-          </h4>
+          {!onLogin ? <NotLogin handleClick={handleClick} />:<Logedin/>}
         </div>
       </div>
       <Modal open={isOpen} onClose={() => setisOpen(false)}>
         {
-          modaltype === 'signup' ? <Signup clickSignin={()=>setmodaltype('signin')}/>:<Signin clickSignup={()=>setmodaltype('signup')}/>
+          modaltype === 'signup' ? <Signup clickSignin={()=>setmodaltype('signin')}/>:<Signin clickSignup={()=>setmodaltype('signup')} setlogin={()=>{setLogin(true)}} onClose={() => setisOpen(false)}/>
         }
       </Modal>
     </nav>
