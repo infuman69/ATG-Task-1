@@ -2,8 +2,12 @@ import React from 'react'
 import './PostMenu.css'
 import {AiFillCaretDown} from "react-icons/ai"
 import {MdGroupAdd} from "react-icons/md"
+import {BsArrowRightSquare} from "react-icons/bs"
+import {AiOutlineFilter} from "react-icons/ai"
 
-const PostMenu = () => {
+
+
+const PostMenu = ({joined,setJoin}) => {
   return (
     <section className="postmenucont">
         <section className="postmenu">
@@ -23,11 +27,28 @@ const PostMenu = () => {
                     </span> 
                     <AiFillCaretDown style={{"margin-left":"9px"}} />
                 </button>
-                <button className="joingroup">
+                {
+                    !joined ?
+                (<button className="joingroup" onClick={()=>{setJoin(true)}}>
                     <MdGroupAdd style={{"margin-right":"4px"}} size={20}/>
                     <span>
-                        Join a Group
+                        Join Group
                     </span>
+                </button>
+                ):(
+                    <button className="leavegroup" onClick={()=>{setJoin(false)}}>
+                        <BsArrowRightSquare style={{"margin-right":"4px"}} size={20}/>
+                        <span>
+                            Leave Group
+                        </span>
+                    </button>
+                )
+                }
+                <button className="filterpost" >
+                        <BsArrowRightSquare style={{"margin-right":"4px"}} size={20}/>
+                        <span>
+                            Filter
+                        </span>
                 </button>
             </div>
         </section>

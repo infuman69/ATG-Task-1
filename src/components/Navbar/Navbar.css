@@ -56,3 +56,8 @@ nav{
     height:36px;
     border-radius: 50%;
 }
+@media only screen and (max-width:545px){
+    nav .search-bar{
+        display:none;
+    }
+}

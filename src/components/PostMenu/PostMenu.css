@@ -82,3 +82,56 @@
     font-weight: 600;
     cursor:pointer;
 }
+.leavegroup{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:7px;
+    background: #FFFFFF;
+    color: #6A6A6B;
+    outline: none;
+    border: 0.8px solid #989899;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.filterpost{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:7px;
+    background: #FFFFFF;
+    color: #6A6A6B;
+    outline: none;
+    border: 0.8px solid #989899;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor:pointer;
+    display:none;
+}
+@media only screen and (max-width: 1281px){
+    .writepost{
+        display:none;
+    }
+    .joingroup{
+        display:none;
+    }
+    .leavegroup{
+        display:none;
+    }
+    .filterpost{
+        display: block;
+    }
+    .type:nth-child(2){
+        display:none;
+    }
+    .type:nth-child(3){
+        display:none;
+    }
+    .type:nth-child(4){
+        display:none;
+    }
+    .type:nth-child(5){
+        display:none;
+    }
+}

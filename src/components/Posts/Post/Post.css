@@ -7,3 +7,16 @@
     display:flex;
     justify-content: space-between;
 }
+@media only screen and (max-width:642px){
+    .post-cont{
+        width:90%;
+        display: flex;
+        margin:auto;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:454px){
+    .post-cont{
+        width:100%
+    }
+}

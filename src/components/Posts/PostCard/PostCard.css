@@ -1,11 +1,13 @@
 .card{
-    width:692px;
+    width:83%;
     height:472px;
     font-family: IBM Plex Sans;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
     margin:10px 0;
     margin-left: 5px;
+    display:flex;
+    flex-direction: column;
 }
 .cardimg{
     width:100%;
@@ -32,7 +34,7 @@
     margin-bottom: 15px;
     font-family: IBM Plex Sans;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
@@ -42,7 +44,7 @@
     width:94.5%;
     margin:auto;
     font-family: IBM Plex Sans;
-    font-size: 19px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
@@ -142,3 +144,25 @@
     width:100%;
     padding:7px;
 }
+@media only screen and (max-width: 1485px){
+    .card{
+        height:520px;
+    }
+    .event-title h2{
+        font-size: 1rem;
+    }
+    .event-text{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 543px){
+    .card{
+        width:90%
+    }
+}
+@media only screen and (max-width: 454px){
+    .card{
+        width:100%;
+    }
+}
+

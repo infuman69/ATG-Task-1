@@ -16,11 +16,38 @@
     left:15.1%;
 }
 .group_info h1{
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 700;
 }
 .group_info p{
     margin-top: 3px;
-    font-size:18px;
+    font-size:1.1rem;
     font-weight: 400;
+}
+.arrow-join-group{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:white
+}
+.arrow-join-group button{
+    outline:none;
+    background: none;
+    border: 0.8px solid #FFFFFF;
+    border-radius: 4px;
+    color:white;
+    padding:4px;
+    cursor:pointer;
+}
+.equal-spacing{
+    width:90%;
+    margin:10px auto;
+    display: none;
+}
+@media only screen and (max-width: 545px){
+    .equal-spacing{
+        width:90%;
+        margin:10px auto;
+        display:block;
+    }
 }

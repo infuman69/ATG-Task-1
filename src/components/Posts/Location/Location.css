@@ -36,3 +36,8 @@
 .loctext p{
     font-size: 12px;
 }
+@media only screen and (max-width: 863px){
+    .location{
+        display: none;
+    }
+}

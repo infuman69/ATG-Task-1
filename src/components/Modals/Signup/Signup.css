@@ -132,3 +132,44 @@ form .signupbtn {
     color:#000000;
     font-weight: 500;
 }
+@media only screen and (max-width: 1485px){
+    .some-img{
+        width:25%;
+    }
+}
+@media only screen and (max-width: 1088px){
+    .some-img{
+        width:25%;
+    }
+    .some-img {
+        display:none;
+    }
+}
+@media only screen and (max-width: 1046px){
+    .some-img{
+        width:25%;
+    }
+    .some-img {
+        display:none;
+    }
+    .some-text{
+        display:none;
+
+    }
+    .signupform{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+}
+@media only screen and (max-width: 800px){
+ .signup{   
+    height:70%;
+    position: fixed;
+    width:49.5%;
+   
+    left:50%;
+    bottom:0;
+ }
+}
