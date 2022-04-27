@@ -6,7 +6,7 @@ import signupimg from "../../../Assets/signup.svg"
 
 
 // TODO: GOOGLE AND FACEBOOK BUTTONS REMAINING ,SIGNIN REMAINING , LOGIN UI REMAINING, RESPONSIVE REMAINING
-const Signup = () => {
+const Signup = ({clickSignin}) => {
   return (
     <section className="signup">
         <div className="some-text">
@@ -14,7 +14,7 @@ const Signup = () => {
         </div>
         <div className="create-acc">
             <h1>Create Account</h1>
-            <p>Already have an account?<span>Sign In</span></p>
+            <p>Already have an account?<span style={{'cursor':'pointer'}} onClick={clickSignin}>Sign In</span></p>
         </div>
         <div className="form-cont-img">
             <div className="signupform">

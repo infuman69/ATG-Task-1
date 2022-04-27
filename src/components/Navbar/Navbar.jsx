@@ -10,6 +10,7 @@ import Signup from '../Modals/Signup/Signup'
 
 const Navbar = () => {
   const [isOpen,setisOpen] = useState(false)
+  const [modaltype,setmodaltype] = useState('signup')
   const handleClick = () => {
     setisOpen(true)
   }
@@ -42,7 +43,9 @@ const Navbar = () => {
         </div>
       </div>
       <Modal open={isOpen} onClose={() => setisOpen(false)}>
-        <Signin/>
+        {
+          modaltype === 'signup' ? <Signup clickSignin={()=>setmodaltype('signin')}/>:<Signin clickSignup={()=>setmodaltype('signup')}/>
+        }
       </Modal>
     </nav>
   )

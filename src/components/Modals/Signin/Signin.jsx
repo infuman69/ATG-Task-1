@@ -4,7 +4,7 @@ import signupimg from "../../../Assets/signup.svg"
 import {FcGoogle} from "react-icons/fc"
 import "./Signin.css"
 
-const Signin = () => {
+const Signin = ({clickSignup}) => {
   return (
     <section className="signin">
         <div className="some-text">
@@ -12,7 +12,7 @@ const Signin = () => {
         </div>
         <div className="create-acc">
             <h1>Sign In</h1>
-            <p>Don't have an account yet?<span>Create new for free!</span></p>
+            <p>Don't have an account yet?<span style={{'cursor':'pointer'}} onClick={clickSignup}>Create new for free!</span></p>
         </div>
         <div className="form-cont-img">
             <div className="signinform">
