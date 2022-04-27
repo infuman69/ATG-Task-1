@@ -8,9 +8,9 @@ const Modal = ({open,children,onClose}) => {
   return createPortal(
     <>
         <div className="overlay"></div>
-        <div className="modal">
+        
             {children}
-        </div>
+        
     </>
     ,document.getElementById('modal')
   )
