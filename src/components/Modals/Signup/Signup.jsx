@@ -48,6 +48,9 @@ const Signup = ({clickSignin}) => {
                 <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
             </div>
         </div>
+            <div className="signuptext">
+                <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+            </div>
     </section>
   )
 }

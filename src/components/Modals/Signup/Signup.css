@@ -132,20 +132,18 @@ form .signupbtn {
     color:#000000;
     font-weight: 500;
 }
+.signuptext{
+    display: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
 @media only screen and (max-width: 1485px){
     .some-img{
         width:25%;
     }
 }
-@media only screen and (max-width: 1088px){
-    .some-img{
-        width:25%;
-    }
-    .some-img {
-        display:none;
-    }
-}
-@media only screen and (max-width: 1046px){
+@media only screen and (max-width: 1089px){
+    
     .some-img{
         width:25%;
     }
@@ -162,14 +160,73 @@ form .signupbtn {
       justify-content: space-between;
     }
     
+    .signinform{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+    }
+    .signupform{
+        width:100%;
+    }
+    .name input:nth-child(1),.name input:nth-child(2)
+    {
+        width:50%;
+    }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 887px){
  .signup{   
-    height:70%;
+    height:75%;
     position: fixed;
-    width:49.5%;
+    width:75.5%;
    
     left:50%;
     bottom:0;
  }
+ .signin{
+    height:61%;
+    position: fixed;
+    width:69%;
+   
+    left:50%;
+    bottom:0;
+ }
+ .create-acc h1{
+    font-size: 1.2rem;
+ }
+ .create-acc p{
+     font-size: 0.7rem;
+ }
+ .name input:nth-child(1),.name input:nth-child(2)
+ {
+     width:50%;
+ }
+ .signuptext{
+     display: block;
+     text-align: center;
+     font-size: 0.7rem;
+ }
+ .signup{
+
+ }
+}
+@media only screen and (max-width: 558px){
+    .signup{   
+        height:75%;
+        position: fixed;
+        width:100%;
+        transform: none;
+        left:0;
+        top:25%;
+        border-radius: 8px 8px 0px 0px;
+    }
+    .signin{   
+        height:75%;
+        position: fixed;
+        width:100%;
+        transform: none;
+        left:0;
+        top:25%;
+        border-radius: 8px 8px 0px 0px;
+    }
 }

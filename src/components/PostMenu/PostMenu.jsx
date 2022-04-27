@@ -45,7 +45,7 @@ const PostMenu = ({joined,setJoin}) => {
                 )
                 }
                 <button className="filterpost" >
-                        <BsArrowRightSquare style={{"margin-right":"4px"}} size={20}/>
+                        <AiOutlineFilter style={{"margin-right":"4px"}} size={20}/>
                         <span>
                             Filter
                         </span>
