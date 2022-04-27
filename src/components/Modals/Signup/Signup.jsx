@@ -36,15 +36,16 @@ const Signup = () => {
                         Create Account
                     </button>
                 </form>
-                <button type="submit">
+                <button type="submit" className='mediabtn'>
                    <img src={ficon} alt="" srcset="" /> Sign up with Facebook
                 </button>
-                <button type="submit">
+                <button type="submit" className='mediabtn'>
                    <FcGoogle/> Sign up with Google
                 </button>
             </div>
             <div className="some-img">
                 <img src={signupimg} alt="" srcset="" />
+                <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
             </div>
         </div>
     </section>

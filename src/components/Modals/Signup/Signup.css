@@ -42,9 +42,14 @@
 }
 .some-img{
     width:40%;
+    height:320px;
+}
+.some-img p{
+    font-size: 11px;
 }
 .form-cont-img .some-img img{
     width:100%;
+    height:320px;
 }
 .signupform form input{
     height:46px;
@@ -84,4 +89,16 @@ form .signupbtn {
     color:#FFFFFF;
     border-radius: 20px;
     font-size: 14px;
+    cursor: pointer;
+}
+.mediabtn{
+    display:block;
+    margin:7px 0;
+    width:100%;
+    height:38px;
+    outline:none;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    cursor:pointer; 
+    border-radius: 2px;
 }
